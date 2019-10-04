@@ -3,14 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/chance": "^1.0.7",
     "@types/jest": "24.0.18",
+    "@types/lodash": "^4.14.141",
     "@types/node": "12.7.10",
     "@types/react": "16.9.4",
     "@types/react-dom": "16.9.1",
+    "@types/uuid": "^3.4.5",
+    "chance": "^1.1.0",
+    "ky": "^0.15.0",
+    "lodash": "^4.17.15",
     "react": "^16.10.1",
+    "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.10.1",
     "react-scripts": "3.2.0",
-    "typescript": "3.6.3"
+    "rooks": "^3.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1",
+    "typescript": "3.6.3",
+    "uuid": "^3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",

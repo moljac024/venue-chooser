@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## First step - set up environment
+
+To use the app, you have to provide a valid environment. The easiest way would
+be to copy .env.sample to .env and make any necessary modifications. Look into
+.env.sample for comments and guidance.
+
 ## Available Scripts
 
 In the project directory, you can run:
