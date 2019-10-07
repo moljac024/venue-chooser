@@ -220,6 +220,14 @@ export default function useVenueVote(VenueService: VenueService) {
     // venues and the old participants once, before clearing the participants
     // and rendering again. It is too fast to be noticed by the human eye, but
     // it could be a potential for bugs.
+
+    // Also, this isn't exactly doing what is specified in the task, I know.
+    // Because I started with the assumption that search will happen
+    // automatically after typing, I thought it would be better UX to just clear
+    // the votes and not have the user type in all the participants again. But I
+    // added a button for doing that explicitely. If we wanted to clear the
+    // table as the task suggests, we would simply dispatch "RESET_ALL" here,
+    // instead of "RESET_VOTES".
     dispatch({ type: "RESET_VOTES" })
   }, [venues])
 
