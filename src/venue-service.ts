@@ -150,3 +150,13 @@ export const MockInMemoryVenues: VenueServiceFactory = () => {
     searchVenues,
   }
 }
+
+export const getService: () => VenueService = () => {
+  // I implemented this abstraction and this mock because I ran into a rate
+  // limit on the foursquare API and I didn't want to wait around for that to
+  // become available again. Also, I like the hexagonal architecture and
+  // actually use this pattern quite often now.
+  return process.env.REACT_APP_MOCK_API === "1"
+    ? MockInMemoryVenues()
+    : FourSquareVenues()
+}

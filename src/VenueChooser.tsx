@@ -2,17 +2,10 @@ import React from "react"
 import { Icon, Table, Button, Input, Header } from "semantic-ui-react"
 
 import useVenues from "./use-venue-vote"
-import { FourSquareVenues, MockInMemoryVenues } from "./venue-service"
+import { getService } from "./venue-service"
 
 export default () => {
-  // I implemented this abstraction and this mock because I ran into a rate
-  // limit on the foursquare API and I didn't want to wait around for that to
-  // become available again. Also, I like the hexagonal architecture and
-  // actually use this pattern quite often now.
-  const VenueService =
-    process.env.REACT_APP_MOCK_API === "1"
-      ? MockInMemoryVenues()
-      : FourSquareVenues()
+  const VenueService = getService()
 
   const {
     query,
