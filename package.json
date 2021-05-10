@@ -12,7 +12,7 @@
     "@types/uuid": "^3.4.5",
     "chance": "^1.1.0",
     "ky": "^0.15.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "react": "^16.10.1",
     "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.10.1",
